@@ -1,0 +1,36 @@
+body {
+  background: lightpink;
+  height: 100%;
+  width: 100px;
+}
+#parent {
+  display: flex;
+  background color: lightpink;
+  animation: parent 10s ease-in-out normal;
+  position: relative;
+}
+.child {
+  flex-direction: row;
+  margin: 10px;
+  padding: 10px;
+  border: 1.75px solid;
+  border-radius: 30px;
+  font-size: 25px;
+  text-align: center;
+  animation: myframes 10s;
+}
+.element {
+  animation: parent 10s ease-in-out normal
+}
+@keyframes parent {
+  0%   {left: 0px; top: 0px;}
+  100%  {left: 600px; top: 0px;}
+}
+.element {
+  animation: myframes;
+}
+@keyframes myframes {
+  from {background-color: lightpink;
+  }
+  to {background-color: lightcoral;}
+}
