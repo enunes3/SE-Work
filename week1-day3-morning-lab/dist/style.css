@@ -1,0 +1,40 @@
+#slide1 {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  transition: width 3s ease-in-out 0s;
+}
+
+#slide1:hover {
+  width: 500px;
+} 
+  
+  #slide2 {
+  width: 100px;
+  height: 100px;
+  top: 100px;
+  background: blue;
+  position: relative;
+  animation: myanimation 10s ease-in-out 6s;
+  animation-direction: forward;
+} 
+
+@keyframes myanimation {
+  0%{
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    background: blue;
+  }
+  50%{
+    width: 500px;
+    height: 100px;
+    top: 100px;
+    background: blue;
+}
+  100%{
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    background: blue;
+ }
