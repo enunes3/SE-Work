@@ -1,0 +1,53 @@
+/*
+body {
+  background-image: url('/Users/emilynunes/Desktop/PerScholas/DisappearingBubbles/img/christmas.jpg');
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+  }
+
+  .container > .circle {
+    border-radius: 50%;   ///part of orginial
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: #48a089;
+    display: flex;
+  }
+
+  .circle:hover {
+    opacity: 0.3;
+    background-color: blue;
+  }
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('/Users/emilynunes/Desktop/PerScholas/SE-Work/Week2Hw3/DisappearingBubbles/img/christmas.jpg');
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+}
+.circle{
+    background-color: #048ED2;
+    color: black;
+    padding: 10px;
+    border-radius: 50%;
+    font-size:36px;
+	  font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+}
+.circle:hover{
+    opacity: 0;
+}
