@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<!--Create a page w/ a title & 3 headings (give them a unique ID)
+Using Javascript, include a button and program your headings to change onclick-->
+<html lang="en" dir="ltr">
+  <head>
+    <title>This is my title</title>
+  </head>
+  <body>
+    <h2 id= "output1"> Changing the Font Color </h2>
+    <h2 id= "output2"> Changing the Font Size to 100px</h2>
+    <h2 id= "output3"> Changing the Font Size to 50px</h2>
+
+<button onclick="changeColor() "> Click To Change </button>
+<button onclick="resetDisplay() "> Reset </button>
+
+<script type="text/javascript">
+function changeColor(){
+  document.getElementById("output1").style.color="blue";
+  document.getElementById("output2").style.fontSize="100px";
+  document.getElementById("output3").style.fontSize="50px";
+}
+
+
+function resetDisplay(){
+  document.getElementById("output1").style.color="black";
+  document.getElementById("output2").style.fontSize="22px";
+  document.getElementById("output3").style.fontSize = 'medium';
+}
+</script>
+  </body>
