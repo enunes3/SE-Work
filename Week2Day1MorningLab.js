@@ -1,6 +1,10 @@
+/* Write an if/else statement for the following requirements:
+If student gets 90 or higher: console log  A
+If students get 80 or above: console log B
+If students get 70 or above: console log C
+If students get 55 or above: console log D
+Any grade lower than 55 is F*/
 
-
-/*
 var num = 9;
 if (num >= 90) {
     console.log("Grade-A");
@@ -13,8 +17,9 @@ if (num >= 90) {
 } else if (num < 55) {
     console.log("Grade=F");
 }
-*/
 
+/* Write a JavaScript program that displays "Good Morning" if time is between 5AM-11:59
+"Good Afternoon" if time is between 12 - 16 | otherwise "Hey there" */
 var time= 1300;
 if (time >= 0500 && time <= 1159) {
   console.log('Good Morning!');
