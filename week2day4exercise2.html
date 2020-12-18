@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--Src 5 images then create 2 buttons & call plusDivs() on each
+Pass -1 for the back button and pass+1 for the forward button-->
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> This is my title</title>
+  </head>
+  <body>
+
+    <img id= 'img' alt="img" src="img/img1.png">
+
+    <button onclick="plusDivs(-1) "> Back </button>
+    <button onclick="plusDivs(1) "> Forward </button>
+
+    <script>
+      index =0;
+      function plusDivs(x){
+        var images = ["img/img1.png", "img/img2.png", "img/img3.png", "img/img4.png", "img/img5.png"]
+        if (x>0 && index<4){  //is x = 1 && is index<4
+          index++;
+        }
+        if (x<0 && index>0){  //is x = -1 && is index>0
+          index--;
+      }
+      document.getElementById('img').src = images[index];
+      console.log(index);
+    }
+    </script>
+
+
+  </body>
+
+</html>
