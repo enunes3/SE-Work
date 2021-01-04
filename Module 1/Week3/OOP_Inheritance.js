@@ -22,3 +22,4 @@ class Nemo extends Fish {
 const Nemo1 = new Nemo('orange');
 Nemo1.swim();
 console.log(Nemo1.swim);
+console.log(Nemo1.color);
