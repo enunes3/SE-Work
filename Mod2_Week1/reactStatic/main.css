@@ -1,0 +1,86 @@
+/* body, .main{
+  background-color: #F7F6F6;
+}
+
+.main {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 22% 22% 22% 22%;
+   grid-template-rows: 22% 22% 22% 22%;/*100px auto; */
+  /* grid-gap: 10px 15px;
+  border: solid black;
+}
+
+ .sidebar{
+  grid-column: 1/2;
+  grid-row: 1/5;
+  margin: .8rem;
+  border: solid black;
+}
+
+.review{
+  grid-column: 2/3;
+  grid-row: 1/3;
+  margin: .8rem;
+  border: solid black 15px;
+}  */
+#main {
+    height: 90vh;
+    display: grid;
+    grid-template-areas:
+    "sidebar reviews"
+    "sidebar visitors"  ;
+    grid-template-columns: 25% 72%;
+    grid-template-rows: 35% auto;
+    grid-gap: 1rem 1rem;
+    border: solid rgb(80, 77, 77);
+    background-color: #F7F6F6;
+    padding: 2rem 2rem;
+}
+
+#sidebar {
+    grid-area: sidebar;
+    background-color: #DDDDDD;
+    border: solid rgb(80, 77, 77);
+    font-family: "Lucida Console", "Courier New";
+    text-align: center;
+    padding-top: 10rem;
+
+}
+
+#reviews {
+    grid-area: reviews;
+    display: grid;
+    border: solid rgb(80, 77, 77);
+    grid-gap: 1rem 1rem;
+    padding: 1% 1%;
+    font-family: "Lucida Console", "Courier New";
+}
+
+#item {
+    grid-row: 1/3;
+    width: 95%;
+    height: 95%;
+    background-color: #DDDDDD;
+    border: solid rgb(80, 77, 77);
+    font-family: "Lucida Console", "Courier New";
+}
+
+#visitors {
+    display: grid;
+    grid-area: visitors;
+    background-color: #DDDDDD;
+    border: solid rgb(80, 77, 77);
+    grid-template-rows: 34% 64%;
+    font-family: "Lucida Console", "Courier New";
+}
+
+#vis {
+    grid-column: 1/2;
+}
+h2{
+  font-size: 21px;
+}
+h3 {
+  font-size: 17px;
+}
